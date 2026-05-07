@@ -14,12 +14,11 @@ All project-level decisions and specifications live in `specs/`:
 | [`specs/tech-stack.md`](specs/tech-stack.md) | Technology stack, dependencies, directory structure, naming conventions, coding standards |
 | [`specs/roadmap.md`](specs/roadmap.md) | 7-week execution roadmap, phase divisions, acceptance criteria, risk mitigation |
 
-if any changes to the tech stack, please call the question tool first to get user approval, and then update specs/tech-stack.md.
-
 ## Quick Reference
 
 - **Language**: Python 3.11+, all documentation and comments in Chinese
 - **Package Manager**: `uv` (Rust-based, replaces pip/conda)
+- **Dataset Access**: Hugging Face mirror (hf-mirror.com) allowed for dataset downloads
 - **Core Libraries**: pandas, numpy, scikit-learn, LightGBM, XGBoost, SHAP, MLflow, Optuna
 - **Directory Pattern**: `0X-case-name/` (e.g., `01-customer-churn`)
 - **Case Structure**: Each case has `config.yaml`, `notebooks/`, `src/`, `outputs/`, `mlruns/`

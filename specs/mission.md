@@ -53,7 +53,7 @@ ml-cases-practice：通过真实案例掌握机器学习实战能力
 
 所有案例数据均来自公开平台：
 
-- HuggingFace Datasets（主要来源）
+- HuggingFace Datasets（主要来源，可以通过HF-Mirror镜像站获取）
 - ModelScope 数据集（中文场景补充）
 - Kaggle 公开数据集（通过 HuggingFace 镜像获取）
 
