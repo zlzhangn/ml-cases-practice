@@ -50,5 +50,7 @@ mlruns/
 .DS_Store
 Thumbs.db
 
+.cache/
+
 # Opencode
 opencode.json

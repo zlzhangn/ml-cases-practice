@@ -1,0 +1,76 @@
+# 全局基础配置模板
+# 各案例可通过复制此文件并覆盖特定字段来使用
+
+project:
+  name: ml-cases-practice
+  version: "0.1.0"
+  random-seed: 42
+
+paths:
+  data-dir: ./data
+  outputs-dir: ./outputs
+  mlruns-dir: ./mlruns
+  cache-dir: ./.cache
+
+data:
+  # 数据加载通用配置
+  test-size: 0.2
+  validation-size: 0.1
+  stratify: true
+  shuffle: true
+
+model:
+  # 通用模型参数
+  n-estimators: 100
+  learning-rate: 0.1
+  max-depth: 6
+  random-state: 42
+  n-jobs: -1
+
+lightgbm:
+  n-estimators: 100
+  learning-rate: 0.1
+  max-depth: 6
+  num-leaves: 31
+  subsample: 0.8
+  colsample-bytree: 0.8
+  random-state: 42
+  n-jobs: -1
+  verbose: -1
+
+xgboost:
+  n-estimators: 100
+  learning-rate: 0.1
+  max-depth: 6
+  subsample: 0.8
+  colsample-bytree: 0.8
+  random-state: 42
+  n-jobs: -1
+
+training:
+  # 训练通用配置
+  cv-folds: 5
+  early-stopping-rounds: 50
+  eval-metric: auc
+
+evaluation:
+  # 评估通用配置
+  classification-metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
+    - auc
+  regression-metrics:
+    - rmse
+    - mae
+    - mape
+    - r2
+
+mlflow:
+  experiment-name: default
+  tracking-uri: null  # null 表示使用本地文件系统
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

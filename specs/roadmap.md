@@ -24,10 +24,10 @@
 **唯一目标**：让后续 7 个案例能"开箱即用"。
 
 **任务清单**：
-- [ ] `pyproject.toml` + `uv.lock` — 依赖锁定
-- [ ] `src/` 公共库（数据加载、模型训练、可视化、实验追踪）
-- [ ] `configs/base_config.yaml` — 配置模板
-- [ ] 验证：`uv sync` 后 `python -c "from src import data_utils"` 通过
+- [x] `pyproject.toml` + `uv.lock` — 依赖锁定
+- [x] `src/` 公共库（数据加载、模型训练、可视化、实验追踪）
+- [x] `configs/base_config.yaml` — 配置模板
+- [x] 验证：`uv sync` 后 `python -c "from src import data_utils"` 通过
 
 **退出标准**：新建一个案例目录，复制模板后 5 分钟内能开始写代码。
 
