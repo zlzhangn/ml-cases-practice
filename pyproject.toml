@@ -22,6 +22,7 @@ dependencies = [
     "notebook>=7.0",
     "imbalanced-learn>=0.12",
     "feature-engine>=1.6",
+    "datasets>=4.8.5",
 ]
 
 [project.optional-dependencies]
