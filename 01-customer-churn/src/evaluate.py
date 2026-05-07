@@ -13,8 +13,8 @@ import pandas as pd
 import shap
 from sklearn.metrics import precision_recall_curve
 
-from src.model_utils import evaluate_classification, print_classification_report
-from src.viz_utils import plot_confusion_matrix, plot_roc_curve, save_or_show
+from shared.src.model_utils import evaluate_classification, print_classification_report
+from shared.src.viz_utils import plot_confusion_matrix, plot_roc_curve, save_or_show
 
 logger = logging.getLogger(__name__)
 

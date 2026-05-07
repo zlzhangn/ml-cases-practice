@@ -1,6 +1,6 @@
 """src 公共工具库包."""
 
-from src.data_utils import (
+from shared.src.data_utils import (
     load_config,
     load_csv,
     reduce_memory_usage,
@@ -8,7 +8,7 @@ from src.data_utils import (
     save_csv,
     split_xy,
 )
-from src.experiment import (
+from shared.src.experiment import (
     get_best_run,
     log_artifact,
     log_config,
@@ -18,7 +18,7 @@ from src.experiment import (
     setup_mlflow,
     start_run,
 )
-from src.model_utils import (
+from shared.src.model_utils import (
     evaluate_classification,
     evaluate_regression,
     load_model,
@@ -27,7 +27,7 @@ from src.model_utils import (
     save_model,
     train_model,
 )
-from src.viz_utils import (
+from shared.src.viz_utils import (
     plot_confusion_matrix,
     plot_corr_heatmap,
     plot_distribution,

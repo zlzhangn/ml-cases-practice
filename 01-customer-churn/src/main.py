@@ -18,8 +18,8 @@ from evaluate import evaluate_model, shap_analysis  # noqa: E402
 from features import build_preprocessor, encode_target, identify_column_types  # noqa: E402
 from models import build_baseline_model, build_main_model  # noqa: E402
 
-from src.data_utils import load_config  # noqa: E402
-from src.experiment import (  # noqa: E402
+from shared.src.data_utils import load_config  # noqa: E402
+from shared.src.experiment import (  # noqa: E402
     log_config,
     log_metrics_from_dict,
     log_model,
@@ -27,7 +27,7 @@ from src.experiment import (  # noqa: E402
     setup_mlflow,
     start_run,
 )
-from src.model_utils import save_metrics, save_model  # noqa: E402
+from shared.src.model_utils import save_metrics, save_model  # noqa: E402
 
 RANDOM_SEED = 42
 

@@ -40,7 +40,7 @@ def test_data_utils() -> bool:
     """测试数据工具函数."""
     logger.info("[2/5] 测试数据工具...")
     try:
-        from src.data_utils import (
+        from shared.src.data_utils import (
             load_config,
             reduce_memory_usage,
             save_csv,
@@ -73,7 +73,7 @@ def test_data_utils() -> bool:
 
             config = {"test": "value", "number": 42}
             config_path = Path(tmpdir) / "config.yaml"
-            from src.data_utils import save_config
+            from shared.src.data_utils import save_config
 
             save_config(config, config_path)
             loaded_config = load_config(config_path)
@@ -91,7 +91,7 @@ def test_model_utils() -> bool:
     """测试模型工具函数."""
     logger.info("[3/5] 测试模型工具...")
     try:
-        from src.model_utils import (
+        from shared.src.model_utils import (
             evaluate_classification,
             load_model,
             save_metrics,
@@ -137,7 +137,7 @@ def test_viz_utils() -> bool:
     """测试可视化工具函数."""
     logger.info("[4/5] 测试可视化工具...")
     try:
-        from src.viz_utils import (
+        from shared.src.viz_utils import (
             plot_confusion_matrix,
             plot_distribution,
             plot_roc_curve,
@@ -174,7 +174,7 @@ def test_mlflow() -> bool:
     """测试 MLflow 实验记录."""
     logger.info("[5/5] 测试 MLflow 实验追踪...")
     try:
-        from src.experiment import (
+        from shared.src.experiment import (
             log_metrics_from_dict,
             log_params_from_dict,
             setup_mlflow,

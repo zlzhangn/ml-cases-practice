@@ -58,12 +58,13 @@ opencode-examples/
 │   ├── mission.md
 │   ├── tech-stack.md
 │   └── roadmap.md
-├── src/                # 公共工具库
-│   ├── __init__.py
-│   ├── data_utils.py      # 数据加载、缓存、预处理公共函数
-│   ├── model_utils.py     # 模型训练、评估、保存公共函数
-│   ├── viz_utils.py       # 可视化公共函数
-│   └── experiment.py      # MLflow 实验管理封装
+├── shared/             # 公共模块目录
+│   └── src/                # 公共工具库
+│       ├── __init__.py
+│       ├── data_utils.py      # 数据加载、缓存、预处理公共函数
+│       ├── model_utils.py     # 模型训练、评估、保存公共函数
+│       ├── viz_utils.py       # 可视化公共函数
+│       └── experiment.py      # MLflow 实验管理封装
 ├── configs/            # 全局配置模板
 │   └── base_config.yaml
 ├── 01-customer-churn/  # 案例 1：客户流失预测
@@ -136,7 +137,7 @@ opencode-examples/
 - 最大行宽：100 字符
 - 函数必须有 docstring（中文或英文均可）
 - 所有 `print` 用于临时调试，最终输出使用 `logging`
-- 不要重复造轮子，优先使用项目根目录`src/` 中的公共函数
+- 不要重复造轮子，优先使用`shared/src/` 中的公共函数
 
 ---
 
