@@ -38,13 +38,13 @@
 **唯一目标**：跑通第一个完整案例，建立信心。
 
 **任务清单**：
-- [ ] 从 HuggingFace 加载 `aai510-group1/telco-customer-churn`
-- [ ] EDA + 数据清洗
-- [ ] 特征工程（类别编码、数值标准化）
-- [ ] 基线模型（Logistic Regression）+ 主力模型（LightGBM）
-- [ ] 评估（AUC、F1、Confusion Matrix）
-- [ ] SHAP 可解释性分析
-- [ ] MLflow 记录首个实验
+- [x] 从 HuggingFace 加载 `aai510-group1/telco-customer-churn`
+- [x] EDA + 数据清洗
+- [x] 特征工程（类别编码、数值标准化）
+- [x] 基线模型（Logistic Regression）+ 主力模型（LightGBM）
+- [x] 评估（AUC、F1、Confusion Matrix）
+- [x] SHAP 可解释性分析
+- [x] MLflow 记录首个实验
 
 **退出标准**：AUC > 0.80，能解释 Top 5 关键特征的业务含义。
 
