@@ -3,6 +3,7 @@
 执行完整流程：数据加载 -> 清洗 -> 特征工程 -> 训练 -> 评估 -> SHAP -> MLflow.
 """
 
+import gc
 import logging
 import sys
 from pathlib import Path

@@ -118,7 +118,8 @@ def clean_data(df: pd.DataFrame, config: dict[str, Any]) -> pd.DataFrame:
 
     for col in binary_cols:
         if col in df.columns:
-            df[col] = df[col].map(binary_map)
+            # 既支持 Yes/No 映射，也保留已有的 0/1 值
+            df[col] = df[col].replace(binary_map)
             # 检查是否有未映射的值
             unmapped = df[col].isna().sum()
             if unmapped > 0:

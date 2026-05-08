@@ -16,6 +16,13 @@ sns.set_theme(style="whitegrid", font_scale=1.0)
 plt.rcParams["figure.figsize"] = (10, 6)
 plt.rcParams["figure.dpi"] = 100
 
+plt.rcParams['font.sans-serif'] = [
+    'Noto Sans CJK SC',          # 简体中文首选
+    'WenQuanYi Micro Hei',
+    'DejaVu Sans'
+]
+plt.rcParams['axes.unicode_minus'] = False
+
 
 def save_or_show(fig: plt.Figure, path: str | Path | None = None) -> None:
     """保存或显示图表.

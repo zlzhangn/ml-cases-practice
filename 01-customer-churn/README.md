@@ -24,7 +24,7 @@ uv sync
 
 ```bash
 cd 01-customer-churn
-python src/main.py
+uv run python src/main.py
 ```
 
 运行完成后：
@@ -35,7 +35,7 @@ python src/main.py
 ### 查看实验记录
 
 ```bash
-mlflow ui --backend-store-uri file://./mlruns
+uv run python -m mlflow ui --backend-store-uri ./mlruns
 ```
 
 浏览器访问 `http://localhost:5000` 查看实验对比。
